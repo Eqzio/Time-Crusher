@@ -151,20 +151,22 @@ public class Player : MonoBehaviour
 
     }
      
-     private int Attack_1_Hash = Animator.StringToHash("Base Layer.Attack_1");
+     private int Attack1 = Animator.StringToHash("Base Layer.Attack1");
 
      public bool IsAttacking
      {
          get
          {
              AnimatorStateInfo stateInfo = _animator.GetCurrentAnimatorStateInfo(0);
-             if (stateInfo.fullPathHash == Attack_1_Hash)
+             if (stateInfo.fullPathHash == Attack1)
              {
                  return true;
              }
              return false;
          }
      }
+     
+
     
     
 }
