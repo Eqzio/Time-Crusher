@@ -137,16 +137,34 @@ public class Player : MonoBehaviour
             
 
         }
-
         moveDirection.y -= gravity * Time.deltaTime;
 
         _characterController.Move(moveDirection * Time.deltaTime);
         
         
         
-    
+        
+        if (Input.GetMouseButtonDown(0))
+        {
+            _animator.SetTrigger("attack1");
+        }
 
     }
+     
+     private int Attack_1_Hash = Animator.StringToHash("Base Layer.Attack_1");
+
+     public bool IsAttacking
+     {
+         get
+         {
+             AnimatorStateInfo stateInfo = _animator.GetCurrentAnimatorStateInfo(0);
+             if (stateInfo.fullPathHash == Attack_1_Hash)
+             {
+                 return true;
+             }
+             return false;
+         }
+     }
     
     
 }
