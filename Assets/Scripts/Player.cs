@@ -70,7 +70,7 @@ public class Player : MonoBehaviour
     public float run = 1.7F;
     public float jumpSpeed = 8.0F;
     public float gravity = 20.0F;
-    public float rotateSpeed = 75.0F;
+    public float rotateSpeed = 105.0F;
     private Vector3 moveDirection = Vector3.zero;
 
     private Animator _animator;
