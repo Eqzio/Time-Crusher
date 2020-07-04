@@ -41141,10 +41141,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddb41d1a5e258af49a34ec288e9ee3a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 1478413114}
-  AttackDistance: 10
-  FollowDistance: 20
-  AttackProbability: 0.5
 --- !u!195 &4449186926474032317
 NavMeshAgent:
   m_ObjectHideFlags: 0
